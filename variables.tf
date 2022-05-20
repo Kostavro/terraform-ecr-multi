@@ -11,32 +11,32 @@ variable "default_image_tag_mutability" {
 
 variable "default_tags" {
   description = "Tags to apply by default to the ECR repository"
-  type = map(any)
-  default = null
+  type        = map(any)
+  default     = null
 }
 
 variable "default_scan_on_push" {
   description = "Whether to enable scan on push by default on images of the ECR repository"
-  type = bool
-  default = true
+  type        = bool
+  default     = true
 }
 
 variable "default_encryption_configuration_type" {
   description = "Default encryption configuration for the ECR repository"
-  type = string
-  default = "AES256"
+  type        = string
+  default     = "AES256"
 }
 
 variable "default_encryption_configuration_key" {
   description = "Default encryption configuration for the ECR repository"
-  type = string
-  default = ""
+  type        = string
+  default     = ""
 }
 
 variable "default_lifecycle_policy" {
   description = "Default lifecycle policy for the ECR repository"
-  type = string
-  default = <<EOF
+  type        = string
+  default     = <<EOF
 {
   "rules" : [
     {
@@ -58,8 +58,8 @@ EOF
 
 variable "default_permissions_policy" {
   description = "Default permissions policy for the ECR repository"
-  type = string
-  default = <<EOF
+  type        = string
+  default     = <<EOF
 {
   "Version" : "2008-10-17",
   "Statement" : [

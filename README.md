@@ -1,6 +1,6 @@
 # terraform-ecr-multi
 
-# Introduction 
+# Introduction
 This terraform module is used to create multiple ECR repositories in one go.
 
 # Usage
@@ -14,7 +14,7 @@ inputs = {
       image_tag_mutability = "IMMUTABLE",
       scan_on_push = true
     },
-    "my-ecr-repo-B" ={ 
+    "my-ecr-repo-B" = {
       image_tag_mutability = "MUTABLE",
       scan_on_push = false
     },
